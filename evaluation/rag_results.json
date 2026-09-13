@@ -1,0 +1,18 @@
+[
+  {
+    "question": "What is the main purpose of the House Price Predictor AI system?",
+    "answer": "The main purpose of the House Price Predictor AI system is to:\n\n- Estimate residential and commercial property prices with high accuracy [1].\n- Democratize access to reliable real estate valuation by eliminating guesswork and manual estimation [1].\n- Bridge critical gaps in traditional property valuation methods by providing an accessible, efficient, and scientifically reliable solution for accurate price estimation [1].\n- Reduce uncertainty and enable more confident, efficient, and informed property investment decisions through intelligent, data-driven insights [1].",
+    "expected": "It is designed to estimate residential and commercial property prices using machine learning and data-driven techniques.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-3.8-flash",
+    "contexts": [
+      "ABSTRACT \n \nThis project presents House Price Predictor , an advanced machine learning -based \nsystem designed to estimate residential and commercial property prices with high \naccuracy. House Price Predictor AI is an intelligent, data -driven platform developed to \ndemocratize access to reliable real estate valuation by eliminating guesswork and manual \nestimation. By leveraging integrated technologies such as data preprocessing, feature \nengineering, and supervised learning algorithms using Scikit-learn, the system provides: \n• Automated Price Prediction: Users can input property details such as location, area, \nnumber of rooms, and amenities to receive instant and accurate price predictions without \nrequiring domain expertise.",
+      "Final Statement \n\"House Price Predictor AI is more than just a prediction tool; it is a step toward smarter, \ndata-driven real estate decisions. By empowering users with intelligent insights, we \nreduce uncertainty and enable more confident, efficient, and informed property \ninvestments.\"",
+      "6: CONCLUSION AND FUTURE SCOPE \nHouse Price Predictor AI: Transforming Real Estate Through Intelligent Machine \nLearning \nThe House Price Predictor AI project represents a transformative approach to real estate \nanalytics, leveraging machine learning algorithms, data -driven modeling, and an \ninteractive prediction interface to bridge critical gaps in traditional property valuat ion \nmethods. By integrating advanced predictive models with a user -centric digital \nexperience, the system offers an accessible, efficient, and scientifically reliable solution \nfor accurate house price estimation. \nKey Achievements: \n• Prediction Accuracy: Achieved high accuracy in price estimation using regression -\nbased machine learning models that effectively capture relationships between key"
+    ]
+  }
+]

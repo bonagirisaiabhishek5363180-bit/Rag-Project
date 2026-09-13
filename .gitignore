@@ -20,8 +20,8 @@ build/
 chroma_db/
 
 sources/
-
-
+lets-scroll-main.zip
+lets-scroll-main/assets/
 rag_golden_eval_package.zip
 
 *.onnx

@@ -1,0 +1,60 @@
+# Google Flow Video Generation Prompts
+
+To create the lag-free scrolling experience, we will use the **Continuous Walkthrough Architecture (Architecture A)**. This means there are no "dive-in" or "connector" clips, just one continuous forward flight divided into 5 legs (one for each section).
+
+**Important Rules for Google Flow / Nano Banana Pro:**
+- Render Leg 1 using the base image as the starting frame.
+- Render Leg 2 using the *last frame of Leg 1* as its starting frame.
+- Render Leg 3 using the *last frame of Leg 2* as its starting frame, and so on.
+- Make sure there is no end-frame conditioning, only start-frame conditioning.
+- **Duration:** Each video leg should be generated to be **8 to 10 seconds long**.
+
+---
+
+### Global Style Preamble (append this to the end of EVERY prompt)
+`Ultra-photorealistic architectural photography of a grand circular concrete library interior, dark premium cinematic aesthetic, warm golden-hour rim lighting. Floating transparent glass screens and loose papers gracefully suspended in mid-air in the center. Sleek modern design, editorial magazine quality, shallow depth of field, centered composition with a little headroom. Absolutely no text, no letters, no numbers, no logos, no people.`
+
+---
+
+### 1. Ingest (Leg 1)
+**Start Image:** `rag_library_base.jpg` (or your initial generated image)
+
+**Prompt:**
+`Single continuous cinematic camera move, no cuts. The camera slowly glides forward into the library toward the floating glass screens and loose papers. In the final second, settle back into a slow, steady forward glide toward the center of the room.`
+*(Append Global Style Preamble here)*
+
+---
+
+### 2. Retrieve (Leg 2)
+**Start Image:** *The last frame of Leg 1 video*
+
+**Prompt:**
+`Single continuous cinematic camera move, no cuts. **Continue the same slow, steady forward glide.** The camera moves gracefully through the floating papers, sweeping in a slow half-orbit around a glowing glass pane, keeping it centered, then continuing past it. **In the final second, settle back into a slow, steady forward glide toward the center of the room.**`
+*(Append Global Style Preamble here)*
+
+---
+
+### 3. Rerank (Leg 3)
+**Start Image:** *The last frame of Leg 2 video*
+
+**Prompt:**
+`Single continuous cinematic camera move, no cuts. **Continue the same slow, steady forward glide.** The camera rises smoothly as the full scale of the circular concrete library reveals below, gliding between suspended documents. **In the final second, settle back into a slow, steady forward glide toward the center of the room.**`
+*(Append Global Style Preamble here)*
+
+---
+
+### 4. Generate (Leg 4)
+**Start Image:** *The last frame of Leg 3 video*
+
+**Prompt:**
+`Single continuous cinematic camera move, no cuts. **Continue the same slow, steady forward glide.** The camera pushes in close to a luminous floating document until it nearly fills the frame, then eases gently back out to reveal the grand library space again. **In the final second, settle back into a slow, steady forward glide toward the center of the room.**`
+*(Append Global Style Preamble here)*
+
+---
+
+### 5. Answer (Leg 5)
+**Start Image:** *The last frame of Leg 4 video*
+
+**Prompt:**
+`Single continuous cinematic camera move, no cuts. **Continue the same slow, steady forward glide.** The camera glides forward and the floating papers gently part to reveal a central glowing terminal floating in soft dark space, arriving directly in front of it and holding perfectly still.`
+*(Append Global Style Preamble here)*
