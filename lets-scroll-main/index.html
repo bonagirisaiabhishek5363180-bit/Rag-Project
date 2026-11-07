@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Mondroid — Your Knowledge. Deeper Answers.</title>
-  <meta name="description" content="Upload your documents, ask anything, and get accurate, contextual answers powered by RAG." />
+  <title>Mondroid — Your knowledge. Deeper answers.</title>
+  <meta name="description" content="Ask questions across your documents and get accurate, context-aware answers powered by RAG." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,15 +21,15 @@
       mondroid
     </div>
     <div class="nav-links">
-      <a href="#" class="active">Home</a>
-      <a href="#">Product</a>
-      <a href="#">How it works</a>
-      <a href="#">Docs</a>
-      <a href="#">About</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="product.html">Product</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="docs.html">Docs</a>
+      <a href="about.html">About</a>
     </div>
     <div class="nav-right">
       <span class="built-for">Built for<br>deeper understanding.</span>
-      <a href="#" class="btn-primary">Try Now ↗</a>
+      <a href="try.html" class="btn-primary">Try Mondroid ↗</a>
     </div>
   </nav>
 
@@ -40,29 +40,29 @@
     </div>
     <div class="footer-steps">
       <div class="f-step active" id="f-step-1">
-        <div class="icon">📄</div>
-        <h4>1. Ingest</h4>
-        <p>Upload your documents.</p>
+        <div class="step-num">01</div>
+        <h4>INGEST</h4>
+        <p>Bring your knowledge in.</p>
       </div>
       <div class="f-step" id="f-step-2">
-        <div class="icon">🔍</div>
-        <h4>2. Retrieve</h4>
-        <p>Hybrid search (Vector + BM25).</p>
+        <div class="step-num">02</div>
+        <h4>RETRIEVE</h4>
+        <p>Find the context that matters.</p>
       </div>
       <div class="f-step" id="f-step-3">
-        <div class="icon">📊</div>
-        <h4>3. Rerank</h4>
-        <p>Cross-encoder for better results.</p>
+        <div class="step-num">03</div>
+        <h4>RERANK</h4>
+        <p>Keep the strongest evidence.</p>
       </div>
       <div class="f-step" id="f-step-4">
-        <div class="icon">✨</div>
-        <h4>4. Generate</h4>
-        <p>Powered by Gemini with Groq fallback.</p>
+        <div class="step-num">04</div>
+        <h4>GENERATE</h4>
+        <p>Turn context into an answer.</p>
       </div>
       <div class="f-step" id="f-step-5">
-        <div class="icon">💬</div>
-        <h4>5. Answer</h4>
-        <p>Get accurate answers with sources.</p>
+        <div class="step-num">05</div>
+        <h4>ANSWER</h4>
+        <p>Ask. Understand. Move forward.</p>
       </div>
     </div>
   </div>
@@ -72,40 +72,40 @@
   <script src="scrub-engine.js"></script>
   <script>
     mountLetsScroll(document.getElementById('world'), {
-      brand: null, // Custom brand implemented above
-      nav: false, // Disabling built-in nav to use our custom one
+      brand: null,
+      nav: false,
       diveScroll: 1.5,
       hint: 'SCROLL',
       sections: [
         {
           id: 'scene1', label: '01 Ingest',
-          still: 'assets/rag_library_base.jpg', // Using generated image as placeholder
+          still: 'assets/rag_library_base.jpg',
           clip: 'assets/scene1.mp4',
-          accent: '#ffffff',
-          eyebrow: 'RETRIEVAL-AUGMENTED GENERATION',
-          title: 'Your Knowledge. Deeper Answers.',
-          body: 'Upload your documents, ask anything, and get accurate, contextual answers powered by RAG.',
+          accent: '#D7FF4F',
+          eyebrow: '01 / INGEST',
+          title: 'Your knowledge. Deeper answers.',
+          body: 'Ask questions across your documents and get accurate, context-aware answers powered by RAG.',
           tags: [],
           cta: { primary: { label: 'Try Mondroid ↗', href: '#' },
-                 secondary: { label: '▶ Watch Video', href: '#' } },
+                 secondary: { label: 'Explore ↓', href: '#' } },
         },
         {
           id: 'scene2', label: '02 Retrieve',
           still: 'assets/rag_library_base.jpg',
           clip: 'assets/scene2.mp4',
-          accent: '#ffffff',
-          eyebrow: '',
-          title: 'Hybrid Search Engine',
+          accent: '#D7FF4F',
+          eyebrow: '02 / RETRIEVE',
+          title: 'Find the context that matters.',
           body: 'Combine semantic vector search with keyword-based BM25 to find the most relevant context, no matter how obscure.',
-          tags: ['Vector', 'BM25', 'Fast'],
+          tags: ['Vector', 'BM25'],
         },
         {
           id: 'scene3', label: '03 Rerank',
           still: 'assets/rag_library_base.jpg',
           clip: 'assets/scene3.mp4',
-          accent: '#ffffff',
-          eyebrow: '',
-          title: 'Precision Matters',
+          accent: '#D7FF4F',
+          eyebrow: '03 / RERANK',
+          title: 'Keep the strongest evidence.',
           body: 'Our cross-encoder reranking model evaluates every document chunk to ensure only the highest quality context makes it to the LLM.',
           tags: [],
         },
@@ -113,9 +113,9 @@
           id: 'scene4', label: '04 Generate',
           still: 'assets/rag_library_base.jpg',
           clip: 'assets/scene4.mp4',
-          accent: '#ffffff',
-          eyebrow: '',
-          title: 'Intelligent Synthesis',
+          accent: '#D7FF4F',
+          eyebrow: '04 / GENERATE',
+          title: 'Turn context into an answer.',
           body: 'Powered by Gemini models with high-speed Groq fallback, ensuring ultra-low latency and highly accurate generation.',
           tags: [],
         },
@@ -123,21 +123,21 @@
           id: 'scene5', label: '05 Answer',
           still: 'assets/rag_library_base.jpg',
           clip: 'assets/scene5.mp4',
-          accent: '#ffffff',
-          eyebrow: 'THE RESULT',
-          title: 'Understanding, Delivered.',
+          accent: '#D7FF4F',
+          eyebrow: '05 / ANSWER',
+          title: 'Ask. Understand. Move forward.',
           body: 'Actionable answers perfectly tailored to your query, fully cited with references back to your original source material.',
           tags: [],
         },
       ],
-      connectors: [], // Empty for continuous walkthrough
+      connectors: [],
     });
 
     // Script to format the main title exactly like the Mondroid reference
     setTimeout(() => {
       const titles = document.querySelectorAll('.sw-copy__title');
       if (titles.length > 0) {
-        titles[0].innerHTML = 'Your<br>Knowledge.<br><span style="color: rgba(255, 255, 255, 0.5)">Deeper Answers</span>';
+        titles[0].innerHTML = 'Your knowledge.<br><span style="color: #A4A29B">Deeper answers.</span>';
       }
     }, 50);
 

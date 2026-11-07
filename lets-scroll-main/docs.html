@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mondroid — Documentation</title>
+  <meta name="description" content="Documentation for the Mondroid RAG system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-docs">
+  
+  <nav class="custom-navbar" style="background: var(--sw-bg); border-bottom: 1px solid var(--border);">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor"/>
+      </svg>
+      mondroid
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="docs.html" class="active">Docs</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-right">
+      <a href="try.html" class="btn-primary">Try Mondroid ↗</a>
+    </div>
+  </nav>
+
+  <div class="docs-layout">
+    
+    <aside class="docs-sidebar">
+      <h3>Overview</h3>
+      <a href="#intro" class="docs-nav-link active">Introduction</a>
+      <a href="#getting-started" class="docs-nav-link">Getting Started</a>
+      <a href="#architecture" class="docs-nav-link">Architecture</a>
+      
+      <h3 style="margin-top: 24px;">Pipeline</h3>
+      <a href="#ingestion" class="docs-nav-link">Ingestion</a>
+      <a href="#retrieval" class="docs-nav-link">Retrieval</a>
+      <a href="#reranking" class="docs-nav-link">Reranking</a>
+      <a href="#generation" class="docs-nav-link">Generation</a>
+      
+      <h3 style="margin-top: 24px;">Reference</h3>
+      <a href="#api" class="docs-nav-link">API & Deployment</a>
+    </aside>
+
+    <main class="docs-content">
+      <section id="intro">
+        <h1>Documentation</h1>
+        <p>Mondroid is an advanced Retrieval-Augmented Generation (RAG) system built to turn static document repositories into an interactive, highly precise knowledge graph.</p>
+        <p>This documentation outlines the core concepts, architecture, and deployment constraints of the system.</p>
+      </section>
+
+      <section id="getting-started">
+        <h2>Getting Started</h2>
+        <p>Ensure you have Python 3.10+ installed. Install the dependencies using pip:</p>
+        <code>pip install -r requirements.txt</code>
+        <p>You must provide the required API keys (Gemini for generation, and any embedding provider configured in your <code>.env</code> file).</p>
+      </section>
+
+      <section id="architecture">
+        <h2>Architecture</h2>
+        <p>Mondroid implements an advanced two-stage retrieval pipeline. It uses ChromaDB for persistent vector storage and a local BM25 index for keyword tracking. This hybrid approach guarantees both semantic understanding and exact-match precision.</p>
+      </section>
+
+      <section id="ingestion">
+        <h2>Ingestion</h2>
+        <p>During ingestion, unstructured data is processed via the <code>doc_loader.py</code> module. Documents are chunked using recursive character splitting. Overlap is maintained between chunks to preserve context boundaries.</p>
+      </section>
+
+      <section id="retrieval">
+        <h2>Retrieval</h2>
+        <p>Retrieval occurs in two parallel streams:</p>
+        <ul>
+          <li><strong>Semantic:</strong> Vector search via ChromaDB using dense embeddings.</li>
+          <li><strong>Lexical:</strong> BM25 keyword search to ensure domain-specific terminology is not lost.</li>
+        </ul>
+        <p>The results are merged using Reciprocal Rank Fusion (RRF).</p>
+      </section>
+
+      <section id="reranking">
+        <h2>Reranking</h2>
+        <p>The merged candidate list often contains noise. A CrossEncoder model evaluates each candidate chunk individually against the query, generating an absolute relevance score. The list is then truncated to the top-K highest scoring chunks.</p>
+      </section>
+
+      <section id="generation">
+        <h2>Generation</h2>
+        <p>The top-K chunks are injected into the generation prompt. Mondroid uses Gemini models for high-quality reasoning and synthesis, with a fallback mechanism in place to guarantee low-latency responses.</p>
+      </section>
+
+      <section id="api">
+        <h2>API & Deployment</h2>
+        <p>The system is exposed via a local FastAPI or Flask endpoint (refer to <code>rag_pipe_line.py</code>). When deploying to production, ensure that your persistent ChromaDB directory is mounted to a permanent volume.</p>
+      </section>
+    </main>
+
+  </div>
+
+  <script>
+    // Simple script to highlight active sidebar link based on scroll
+    const sections = document.querySelectorAll('.docs-content section');
+    const navLinks = document.querySelectorAll('.docs-nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 150) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+        </svg>
+        mondroid
+      </div>
+      <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="docs.html">Docs</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Mondroid. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -14,5 +14,357 @@
       "Final Statement \n\"House Price Predictor AI is more than just a prediction tool; it is a step toward smarter, \ndata-driven real estate decisions. By empowering users with intelligent insights, we \nreduce uncertainty and enable more confident, efficient, and informed property \ninvestments.\"",
       "6: CONCLUSION AND FUTURE SCOPE \nHouse Price Predictor AI: Transforming Real Estate Through Intelligent Machine \nLearning \nThe House Price Predictor AI project represents a transformative approach to real estate \nanalytics, leveraging machine learning algorithms, data -driven modeling, and an \ninteractive prediction interface to bridge critical gaps in traditional property valuat ion \nmethods. By integrating advanced predictive models with a user -centric digital \nexperience, the system offers an accessible, efficient, and scientifically reliable solution \nfor accurate house price estimation. \nKey Achievements: \n• Prediction Accuracy: Achieved high accuracy in price estimation using regression -\nbased machine learning models that effectively capture relationships between key"
     ]
+  },
+  {
+    "question": "What property details can users provide to receive price predictions?",
+    "answer": "Users can provide the following property details to receive instant and accurate price predictions:\n*   Location [1]\n*   Area [1]\n*   Number of rooms [1]\n*   Amenities [1]",
+    "expected": "Users can provide details such as location, area, number of rooms, and amenities.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "ABSTRACT \n \nThis project presents House Price Predictor , an advanced machine learning -based \nsystem designed to estimate residential and commercial property prices with high \naccuracy. House Price Predictor AI is an intelligent, data -driven platform developed to \ndemocratize access to reliable real estate valuation by eliminating guesswork and manual \nestimation. By leveraging integrated technologies such as data preprocessing, feature \nengineering, and supervised learning algorithms using Scikit-learn, the system provides: \n• Automated Price Prediction: Users can input property details such as location, area, \nnumber of rooms, and amenities to receive instant and accurate price predictions without \nrequiring domain expertise.",
+      "2. Data Integration & Real-Time Systems \n• Real-Time Market Sync:  Connecting the system to real estate APIs to fetch live \nproperty data and update predictions based on current market trends. \n• Cloud-Based Deployment: Implementing scalable cloud infrastructure to handle large \ndatasets and provide real-time predictions across multiple users. \n3. Personalization & User Experience \n• User Preference Profiles:  Allowing users to save preferences and receive \npersonalized price predictions based on their interests and search history. \n• Smart Recommendations: Suggesting properties within budget ranges and providing \ninsights for better buying or selling decisions. \n4. Advanced Property Insights \n• Risk & Investment Analysis: Providing insights into property appreciation, investment",
+      "number of rooms, and amenities to receive instant and accurate price predictions without \nrequiring domain expertise. \n• Intelligent Prediction Logic: The system utilizes regression -based machine learning \nmodels to identify patterns in historical housing data and prioritize influential features that \nsignificantly impact pricing outcomes. \n• Interactive Data Visualization: A dynamic web-based or graphical interface enables \nusers to visualize trends, correlations, and model behavior, bridging the gap between \ncomplex data analysis and user understanding. \n• Precision Market Insights:  The platform provides analytical feedback on factors \naffecting property valuation, such as location demand, property size, and infrastructure, \nhelping users make informed financial decisions."
+    ]
+  },
+  {
+    "question": "What kind of machine learning models are used to identify patterns in historical housing data?",
+    "answer": "The system utilizes regression-based machine learning models to identify patterns in historical housing data [1]. These models also prioritize influential features that significantly impact pricing outcomes [1].",
+    "expected": "The system uses regression-based machine learning models.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "number of rooms, and amenities to receive instant and accurate price predictions without \nrequiring domain expertise. \n• Intelligent Prediction Logic: The system utilizes regression -based machine learning \nmodels to identify patterns in historical housing data and prioritize influential features that \nsignificantly impact pricing outcomes. \n• Interactive Data Visualization: A dynamic web-based or graphical interface enables \nusers to visualize trends, correlations, and model behavior, bridging the gap between \ncomplex data analysis and user understanding. \n• Precision Market Insights:  The platform provides analytical feedback on factors \naffecting property valuation, such as location demand, property size, and infrastructure, \nhelping users make informed financial decisions.",
+      "and model optimization using Scikit-learn algorithms. \n• Key Functionality: Automated house price prediction based on input features \n(location, area, rooms, etc.) and cross -referencing historical housing data to \nimprove accuracy and ensure reliable prediction outcomes.",
+      "and graphical insights. \n \nFuture Enhancements for House Price Predictor AI \n \n1. Advanced AI & Deep Learning \n• Image-Based Property Analysis:  Integrating computer vision models to analyze \nproperty images (interior/exterior) and enhance prediction accuracy beyond numerical \nfeatures. \n• Advanced Model Optimization: Utilizing deep learning models (Neural Networks) to \ncapture complex patterns in large -scale housing datasets for improved prediction \nperformance."
+    ]
+  },
+  {
+    "question": "Which factors are identified as affecting property valuation?",
+    "answer": "The factors identified as affecting property valuation include location demand, property size, and infrastructure [1]. The system also provides summarized insights on how different features impact property valuation [1].",
+    "expected": "Location demand, property size, and infrastructure are identified as factors affecting property valuation.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "• Feature Importance Analysis:  Identifies and prioritizes key factors (e.g., location, \narea) that significantly influence price prediction outcomes. \n \n3. Analytics & Visualization Dashboard \n• Live Prediction Output:  Displays real -time predicted house prices based on user \ninputs. \n• Data Insights: Provides graphical analysis such as price trends, feature correlations, \nand distribution plots. \n• Reporting: Generates summarized insights that help users understand how different \nfeatures impact property valuation.",
+      "number of rooms, and amenities to receive instant and accurate price predictions without \nrequiring domain expertise. \n• Intelligent Prediction Logic: The system utilizes regression -based machine learning \nmodels to identify patterns in historical housing data and prioritize influential features that \nsignificantly impact pricing outcomes. \n• Interactive Data Visualization: A dynamic web-based or graphical interface enables \nusers to visualize trends, correlations, and model behavior, bridging the gap between \ncomplex data analysis and user understanding. \n• Precision Market Insights:  The platform provides analytical feedback on factors \naffecting property valuation, such as location demand, property size, and infrastructure, \nhelping users make informed financial decisions.",
+      "affecting property valuation, such as location demand, property size, and infrastructure, \nhelping users make informed financial decisions. \n• Error Reduction & Consistency:  Automated prediction logic minimizes human bias \nand inconsistencies, ensuring reliable and repeatable results across different datasets \nand scenarios. \nDeveloped using a Design Thinking approach, House Price Predictor AI addresses \ncritical challenges in the real estate domain—specifically inaccurate pricing, lack of data-\ndriven decision -making, and market unpredictability. By automating the valuation \nprocess, the system particularly benefits home buyers, sellers, real estate agents, and \ninvestors seeking to make smarter, faster, and more confident property decisions in a \ndynamic market environment."
+    ]
+  },
+  {
+    "question": "What does automated prediction logic help reduce?",
+    "answer": "Automated prediction logic helps minimize human bias and inconsistencies [1].",
+    "expected": "It helps reduce human bias and inconsistencies.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "affecting property valuation, such as location demand, property size, and infrastructure, \nhelping users make informed financial decisions. \n• Error Reduction & Consistency:  Automated prediction logic minimizes human bias \nand inconsistencies, ensuring reliable and repeatable results across different datasets \nand scenarios. \nDeveloped using a Design Thinking approach, House Price Predictor AI addresses \ncritical challenges in the real estate domain—specifically inaccurate pricing, lack of data-\ndriven decision -making, and market unpredictability. By automating the valuation \nprocess, the system particularly benefits home buyers, sellers, real estate agents, and \ninvestors seeking to make smarter, faster, and more confident property decisions in a \ndynamic market environment.",
+      "and model optimization using Scikit-learn algorithms. \n• Key Functionality: Automated house price prediction based on input features \n(location, area, rooms, etc.) and cross -referencing historical housing data to \nimprove accuracy and ensure reliable prediction outcomes.",
+      "3.2 System Modules  \n1. Administrative Management Module \n• • Core Features: Secure user authentication, multi-device accessibility, and role-based \naccess control for users and administrators managing the prediction system. \n• • Key Functionality: Enables user profile management, storage of input history, and \ncontrolled access to prediction results, along with secure handling of housing data and \nmodel interactions for reliable and privacy-compliant operations. \n                     \n \n2. AI & Prediction Logic Module \n• Core Features: Real-time data processing, regression-based decision-making, \nand model optimization using Scikit-learn algorithms. \n• Key Functionality: Automated house price prediction based on input features"
+    ]
+  },
+  {
+    "question": "What three major real-estate problems does the House Price Predictor AI address?",
+    "answer": "I could not find enough information in the provided documents to answer this question.",
+    "expected": "It addresses pricing inefficiency, decision uncertainty, and financial risk.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "Innovation \n1. Addressing Critical Market Challenges \nHouse Price Predictor AI tackles three fundamental problems in real estate: \n• Pricing Inefficiency: Many users lack access to accurate valuation tools. Our solution \nprovides reliable predictions through an accessible platform.",
+      "(Secondary factors).  \n2. User & System Interface: \n• Prediction Dashboard: Real -time display of estimated property prices.  \n• Data Visualization Module: Graphical representation of trends and feature \nimpact.  \n3. Data Processing & Analytics Module: \n• Handles dataset cleaning, preprocessing, feature selection, and model \nevaluation.  \n \nFunctional Features: \n• Prediction Engine:  Provides instant house price estimation based on user input.  \n• Insight Generator: Displays how different factors influence pricing outcomes. \n \n1.3 Why House Price Predictor AI Matters: Transforming Real Estate Through \nInnovation \n1. Addressing Critical Market Challenges \nHouse Price Predictor AI tackles three fundamental problems in real estate:",
+      "5:  OUTPUTS SCREENS \n \nLanding Page : Figure 5.1: House Price Predictor AI Welcome  \nInterface \n \nSecurity Portal: Figure 5.2: Price and Important Features"
+    ]
+  },
+  {
+    "question": "What is the feature-priority order in the machine learning prediction engine?",
+    "answer": "The House Price Predictor AI system utilizes feature importance ranking to prioritize the most impactful variables [1]. However, the specific feature-priority order in the machine learning prediction engine is not detailed in the provided context.",
+    "expected": "Location is Priority 1, Area is Priority 2, and Amenities are secondary factors.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "and ev aluates property prices based on statistically significant features. Unlike \nconventional valuation methods, our system utilizes regression -based predictive \nmodeling and feature importance ranking to prioritize the most impactful variables, \ncreating a dynamic and intelligent pricing mechanism. \nWith features like real-time prediction, data visualization, and intelligent feature analysis, \nHouse Price Predictor AI makes professional -grade real estate valuation accessible to \neveryone. This innovation represents a significant leap forward in democrat izing data-\ndriven decision -making, combining advanced machine learning with human -centered \ndesign to ensure accurate, transparent, and efficient property valuation. \n \n1.1 Background & Motivation",
+      "6: CONCLUSION AND FUTURE SCOPE \nHouse Price Predictor AI: Transforming Real Estate Through Intelligent Machine \nLearning \nThe House Price Predictor AI project represents a transformative approach to real estate \nanalytics, leveraging machine learning algorithms, data -driven modeling, and an \ninteractive prediction interface to bridge critical gaps in traditional property valuat ion \nmethods. By integrating advanced predictive models with a user -centric digital \nexperience, the system offers an accessible, efficient, and scientifically reliable solution \nfor accurate house price estimation. \nKey Achievements: \n• Prediction Accuracy: Achieved high accuracy in price estimation using regression -\nbased machine learning models that effectively capture relationships between key",
+      "Exhaustive Algorithms, Heuristic Algorithms, Gene Prediction, Categories of gene prediction \nprograms, Gene prediction in prokaryotes and Eukaryotes. \n \n \n \nL T P/D C \n3 - - 3"
+    ]
+  },
+  {
+    "question": "Which machine learning algorithms are explicitly named in the project scope?",
+    "answer": "The House Price Predictor AI project used regression-based machine learning models for price estimation [6].",
+    "expected": "Linear Regression and Decision Tree.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "6: CONCLUSION AND FUTURE SCOPE \nHouse Price Predictor AI: Transforming Real Estate Through Intelligent Machine \nLearning \nThe House Price Predictor AI project represents a transformative approach to real estate \nanalytics, leveraging machine learning algorithms, data -driven modeling, and an \ninteractive prediction interface to bridge critical gaps in traditional property valuat ion \nmethods. By integrating advanced predictive models with a user -centric digital \nexperience, the system offers an accessible, efficient, and scientifically reliable solution \nfor accurate house price estimation. \nKey Achievements: \n• Prediction Accuracy: Achieved high accuracy in price estimation using regression -\nbased machine learning models that effectively capture relationships between key",
+      "Space – Testing Machine Learning Algorithms – A Brief Review of Probability Theory – \nTurning Data into Probabilities – The Bias-Variance Tradeoff. \n \nUNIT-II  \nSupervised Learning  \nLinear Models for Regression – Linear Basis Function Models – The Bias-Variance \nDecomposition – Bayesian Linear Regression – Common Regression Algorithms – Simple \nLinear Regression – Multiple Linear Regression – Linear Models for Classification – \nDiscriminant Functions – Probabilistic Generative Models – Probabilistic Di scriminative \nModels – Laplace Approximation – Bayesian Logistic Regression – Common Classification \nAlgorithms – k-Nearest Neighbors – Decision Trees – Random Forest model – Support \nVector Machines. \n \nUNIT-III  \nUnsupervised Learning",
+      "5. To learn other learning aspects such as reinforcement learning, representation \nlearning, deep learning, neural networks and other technologies. \nCourse Outcomes (COs) \nAt the end of the course, student would be able to \nCO1. Discuss the machine learning process and its challenges. \nCO2. Explain different regression and classification models. \nCO3. Choose appropriate Unsupervised learning model. \nCO4. Explain probability based learning methods. \nCO5. Compare the different advanced learning methods \nUNIT-I  \nIntroduction  \nMachine Learning – Types of Machine Learning – Supervised Learning – Unsupervised \nLearning – Basic Concepts in Machine Learning – Machine Learning Process – Weight \nSpace – Testing Machine Learning Algorithms – A Brief Review of Probability Theory –"
+    ]
+  },
+  {
+    "question": "What does the Prediction Dashboard provide?",
+    "answer": "The Analytics & Visualization Dashboard provides the following:\n*   Live Prediction Output: Displays real-time predicted house prices based on user inputs [1].\n*   Data Insights: Offers graphical analysis, including price trends, feature correlations, and distribution plots [1].\n*   Reporting: Generates summarized insights to help users understand how different features impact property valuation [1].",
+    "expected": "It provides a real-time display of estimated property prices.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "• Feature Importance Analysis:  Identifies and prioritizes key factors (e.g., location, \narea) that significantly influence price prediction outcomes. \n \n3. Analytics & Visualization Dashboard \n• Live Prediction Output:  Displays real -time predicted house prices based on user \ninputs. \n• Data Insights: Provides graphical analysis such as price trends, feature correlations, \nand distribution plots. \n• Reporting: Generates summarized insights that help users understand how different \nfeatures impact property valuation.",
+      "based machine learning models that effectively capture relationships between key \nfeatures such as location, area, and amenities. \n• Seamless Accessibility: Developed a structured system architecture—Input Interface, \nData Processing, Prediction Engine, and Output Dashboard —making advanced real \nestate analytics accessible through a simple and user-friendly interface. \n• Secure Infrastructure:  Implemented secure data handling and authentication \nmechanisms to ensure that user inputs and prediction results remain protected and \nreliable. \n• Aesthetic Innovation:  Designed an intuitive and visually appealing interface that \nsimplifies complex data analysis and enhances user experience through clear outputs \nand graphical insights. \n \nFuture Enhancements for House Price Predictor AI",
+      "3. Prediction Engine & Simulation Module (The Model Simulator) \n• Core Features: Real-time prediction processing, \"Digital Model\" visualization, and scenario-\nbased outcome simulation using machine learning algorithms. \n• Key Functionality: Generates real-time house price predictions based on user inputs, tracks \nmodel performance across different scenarios, and provides analytical insights such as accuracy \nmetrics and feature impact evaluation. \n              \n4. Data Monitoring & Communication Module \n• Core Features:  Secure data transmission between the user interface and \nprediction system, activity logging, and system performance monitoring. \n• Key Functionality:  Enables real -time tracking of user inputs and prediction"
+    ]
+  },
+  {
+    "question": "What does the Data Visualization Module provide?",
+    "answer": "I could not find enough information in the provided documents to answer this question.",
+    "expected": "It provides graphical representations of trends and feature impact.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "3. Prediction Engine & Simulation Module (The Model Simulator) \n• Core Features: Real-time prediction processing, \"Digital Model\" visualization, and scenario-\nbased outcome simulation using machine learning algorithms. \n• Key Functionality: Generates real-time house price predictions based on user inputs, tracks \nmodel performance across different scenarios, and provides analytical insights such as accuracy \nmetrics and feature impact evaluation. \n              \n4. Data Monitoring & Communication Module \n• Core Features:  Secure data transmission between the user interface and \nprediction system, activity logging, and system performance monitoring. \n• Key Functionality:  Enables real -time tracking of user inputs and prediction",
+      "B.Tech CSE (DS)  AR22 \n \nDepartment of Computer Science and Engineering 204 \nUNIT-IV  \nBig Data analytics \nData analytics life cycle, Data cleaning , Data transformation, Comparing reporting and \nanalysis, Types of analysis, Analytical approaches, Data analytics using R, Exploring basic \nfeatures of R, Exploring R GUI, Reading data sets, Manipulating and processing data in R, \nFunctions and packages in R, Performing graphical analysis. \n \n \nUNIT-V  \nBig Data Visualization: Introduction to Data visualization, Challenges to Big data \nvisualization, Types of data visualization, Visualizing Big Data , Tools used in data \nvisualization, Proprietary Data Visualization tools, Open source data visualization tools, Data \nvisualization with Tableau. \n \n \nTEXT BOOK(S)",
+      "3.2 System Modules  \n1. Administrative Management Module \n• • Core Features: Secure user authentication, multi-device accessibility, and role-based \naccess control for users and administrators managing the prediction system. \n• • Key Functionality: Enables user profile management, storage of input history, and \ncontrolled access to prediction results, along with secure handling of housing data and \nmodel interactions for reliable and privacy-compliant operations. \n                     \n \n2. AI & Prediction Logic Module \n• Core Features: Real-time data processing, regression-based decision-making, \nand model optimization using Scikit-learn algorithms. \n• Key Functionality: Automated house price prediction based on input features"
+    ]
+  },
+  {
+    "question": "What tasks are handled by the Data Processing and Analytics Module?",
+    "answer": "I could not find enough information in the provided documents to answer this question.",
+    "expected": "It handles dataset cleaning, preprocessing, feature selection, and model evaluation.",
+    "sources": [
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "5. Visualize the Big Data using different tools.  \n \nCourse Outcomes(COs) \nAt the end of the course, student would be able to \nCO1. Describe Big Data elements and Architectures. \nCO2. Apply different mathematical models for Big Data. \nCO3. Explain all the data processing componen ts of Hadoop architecture by \ndeveloping different applications. \nCO4. Analyze data using R. \nCO5. Employ appropriate tools for big data visualization. \n \nLIST OF EXPERIMENTS \nWeek-1 \nInstallation, Configuration, and Running of Hadoop and HDFS. \n \nWeek-2 \nImplement the following file management tasks in Hadoop:  Adding files and directories,  \nRetrieving files and  Deleting files. \n \nWeek-3 \nImplementation of Word Count / Frequency Programs using MapReduce. \n \nWeek-4",
+      "Making Process. \n \nUNIT-II  \nDescriptive Analytics \nBusiness Reporting Definitions and Concepts, Data and Information Visualization, Different \nTypes of Charts and Graphs, The Emergence of Data Visualization and Visual Analytics, \nPerformance Dashboards, Business Performance Management, Performance Measurement, \nBalanced Scorecards. \n \n \n \nL T P/D C \n3 - - 3",
+      "5. Understand needs of database processing and learn techniques for controlling the \nconsequences of concurrent data access. \n \n \nCourse Outcomes(COs) \nAt the end of the course, student would be able to \nCO1. Differentiate DBMS from traditional data storage mechanisms. \nCO2. Design and describe data models and schemas in DBMS.  \nCO3. Use SQL- the standard language of relational databases, for database processing.  \nCO4. Design a normalized database resolving various problems like redundant and \nfunctional dependencies. \nCO5. Implement Transaction and Query processing techniques for data storage and \nretrieval. \n \nLIST OF EXPERIMENTS \nWeek-1 \nE-R Model: Analyze the problem with the entities which identify data persisted in the \ndatabase which contains entities, attributes. \n \nWeek-2"
+    ]
+  },
+  {
+    "question": "What does the Insight Generator display?",
+    "answer": "I could not find enough information in the provided documents to answer this question.",
+    "expected": "It displays how different factors influence pricing outcomes.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "C:\\Users\\Sai Adithya\\Downloads\\20EC22002 CAALP Question Bank Unit Wise.docx"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "• Key Functionality:  Enables real -time tracking of user inputs and prediction \nresults, generates alerts for invalid data or system issues, and integrates data flow \nbetween frontend interfaces and backend machine learning models for efficient \noperation.",
+      "and Inter-personal skills to students. \n2. To bring out creativity in students that would promote innovation, research and \nentrepreneurship. \n3. To Preserve and promote cultural heritage, humanistic and spiritual values promoting peace \nand harmony in society. \n \nVISION OF THE DEPARTMENT \nTo produce globally competent and socially responsible computer science engineers \ncontributing to the advancement of engineering and technology which involves creativity and \ninnovation by providing excellent learning environment with world class facilities. \n \nMISSION OF THE DEPARTMENT \n1. To be a centre of excellence in instruction, innovation in research and scholarship, and \nservice to the stake holders, the profession, and the public.",
+      "Determine how the blocks are mapped in direct mapping. 8 A cache system has a hit ratio of 0.9. If the cache access time is 10 ns and main memory access time is 100 ns, calculate the average memory access time. UNIT –V Short Answers What is parallel processing? Define pipelining What is a hazard in an instruction pipeline? What is the difference between linear and nonlinear pipeline? What is throughput in pipelining Name the stages of a typical instruction pipeline. What is the CPI of an ideal pipeline? What is a semaphore? What is the Test-And-Set instruction Long Answer Explain the concept of pipelining in detail"
+    ]
+  },
+  {
+    "question": "What is required for secure access to the prediction system?",
+    "answer": "Secure access to the prediction system requires users to authenticate using valid credentials [3]. The system implements a Secure Login Module to act as a gatekeeper, verifying user identity before access [3]. Secure user authentication is a core feature of the Administrative Management Module [1].",
+    "expected": "Users and administrators must authenticate using login credentials.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "3:  SYSTEM ANALYSIS \n \n3.1  Architectural design \n \n \n \n \nTo protect user data and ensure secure access to the prediction system, House \nPrice Predictor AI implements a Secure Login Module. This module acts as a \ngatekeeper, requiring users to authenticate using valid credentials before \naccessing the system’s features. By verifying user identity, the platform prevents \nunauthorized access and ensures that sensitive input data and prediction results \nremain protected.",
+      "2.2 PERFORMANCE REQUIREMENTS \n \n1. Response Time & Throughput \n• Prediction Speed: The system must process user input and generate predictions within \nmilliseconds to seconds. \n• Concurrency: The system should support multiple users simultaneously without \naffecting performance. \n \n2. Reliability & Availability \n• Uptime: Maintain high availability (99%+) to ensure continuous access for users. \n• Model Stability:  The prediction model should provide consistent outputs for similar \ninputs. \n• Error Handling: In case of invalid input or missing data, the system should prompt \nusers with appropriate messages. \n \n3. Security & Compliance \n• Data Protection:  User input data must be securely handled and not exposed to \nunauthorized access.",
+      "3.2 System Modules  \n1. Administrative Management Module \n• • Core Features: Secure user authentication, multi-device accessibility, and role-based \naccess control for users and administrators managing the prediction system. \n• • Key Functionality: Enables user profile management, storage of input history, and \ncontrolled access to prediction results, along with secure handling of housing data and \nmodel interactions for reliable and privacy-compliant operations. \n                     \n \n2. AI & Prediction Logic Module \n• Core Features: Real-time data processing, regression-based decision-making, \nand model optimization using Scikit-learn algorithms. \n• Key Functionality: Automated house price prediction based on input features"
+    ]
+  },
+  {
+    "question": "What does input validation check?",
+    "answer": "Input security aims to prevent invalid or malicious inputs that could affect system performance [2].",
+    "expected": "It checks that input values such as area, location, and rooms are within valid ranges.",
+    "sources": [
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "usingcross-validation? Describe what is cross-validation briefly. Train a Decision \nTreeagainusingcross-\nvalidationandreportyourresults.Doesyouraccuracyincrease/decrease? Why? \n7. Check to see if the data shows a bias against “foreign workers” (attribute 20), \nor“personal-status”(attribute9).Onewaytodothis(perhapsrathersimpleminded)isto \nremove these attributes from the dataset and see if the  decision tree created in \nthosecases is significantly different from the full dataset case which you have \nalready done.To remove an attribute you can use the preprocess tab in WEKA’s \nGUI Explorer. Didremovingtheseattributeshaveanysignificant effect?Discuss. \n8. Another question might be, do you really need to input so many attributes to get",
+      "3. Security & Compliance \n• Data Protection:  User input data must be securely handled and not exposed to \nunauthorized access. \n• Input Security:  Prevent invalid or malicious inputs that could affect system \nperformance. \n \n1.1 HARDWARE REQUIREMENTS \n \n1. Client-Side (User Interface) \n Mobile Devices: \n• Android: Minimum 4GB RAM, Android 10+  \n• iOS: A12 Bionic chip or higher  \n Web Interface: \n• Processor: Intel i3/i5 or equivalent  \n• RAM: Minimum 4GB  \n• Display: Standard HD display",
+      "B.Tech CSE (DS)  AR22 \n \nDepartment of Computer Science and Engineering 216 \nUNIT-III \nDigital Forensics analysis and validation \nDetermining what data to collect and analyze, validating forensic data, addressing data-hiding \ntechniques, performing remote acquisitions \nNetwork Forensics \nNetwork forensics overview, performing live acquisitions, developing standard procedures for \nnetwork forensics, using network tools, examining the honey net project. \nProcessing Crime and Incident Scenes \nIdentifying digital evidence, collecting evidence in private -sector incident scenes, processing \nlaw enforcement crime scenes, preparing for a search, securing a computer incident or crime \nscene, seizing digital evidence at the scene, storing digital  evidence, obtaining a digital hash,"
+    ]
+  },
+  {
+    "question": "Which algorithms are used in the prediction model according to the functional requirements?",
+    "answer": "According to the functional requirements, the prediction model uses machine learning algorithms, specifically Linear Regression and Decision Tree [1].",
+    "expected": "Linear Regression and Decision Tree, implemented via Scikit-learn.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "2: SYSTEM ANALYSIS \n \n2.1 FUNCTIONAL REQUIREMENTS \nCore Modules & Features \n \n1. System Management & Security \n• Authentication: Secure user and admin access using login credentials to ensure \ncontrolled access to the prediction system \n• Data Validation: Ensures that all input values (area, location, rooms, etc.) are within \nvalid ranges to prevent incorrect predictions. \n \n2. AI-Driven Prediction Engine \n• Data Processing: Accepts user input parameters such as location, area, number of \nbedrooms, and amenities. \n• Prediction Model: Uses machine learning algorithms (Linear Regression / Decision \nTree) implemented via Scikit-learn to estimate house prices with high accuracy. \n• Feature Importance Analysis:  Identifies and prioritizes key factors (e.g., location,",
+      "Non-linear Programming: Unconstrained Optimization Techniques \nDirect Search Methods: Random search methods, Grid search method, Univariate methods. \nIndirect Search Methods: Steepest descent method, Fletcher-Reeves method, Newton’s  \nmethod. \n \nL T P/D C \n3 - - 3",
+      "B.Tech CSE (DS)  AR22 \n \nDepartment of Computer Science and Engineering 137 \nGEETHANJALI COLLEGE OF ENGINEERING AND TECHNOLOGY \n(UGC Autonomous) \nCheeryal (V), Keesara (M), Medchal Dist., Telangana-501301 \n \n20CS31010-THEORY OF COMPUTATION \n(PROFESSIONAL ELECTIVE – I) \nB.Tech. CSE (DS) - III Year, I Sem. \n \nPrerequisite(s):  \n20MA11001-BASIC ENGINEERING MATHEMATICS \n20CS12002-DISCRETE MATHEMATICS \n \nCourse Objectives \nDevelop ability to \n1. Understand mathematical methods of computing devices called abstract machines \nnamely finite automata, pushdown automata and turing machines. \n2. Explain deterministic and non-deterministic machines. \n3. Identify different formal language classes and their relationships. \n4. Design grammars and recognizers for different formal languages."
+    ]
+  },
+  {
+    "question": "What graphical analyses are listed for the analytics dashboard?",
+    "answer": "I could not find enough information in the provided documents to answer this question.",
+    "expected": "Price trends, feature correlations, and distribution plots.",
+    "sources": [
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "B.Tech CSE (DS)  AR22 \n \nDepartment of Computer Science and Engineering 204 \nUNIT-IV  \nBig Data analytics \nData analytics life cycle, Data cleaning , Data transformation, Comparing reporting and \nanalysis, Types of analysis, Analytical approaches, Data analytics using R, Exploring basic \nfeatures of R, Exploring R GUI, Reading data sets, Manipulating and processing data in R, \nFunctions and packages in R, Performing graphical analysis. \n \n \nUNIT-V  \nBig Data Visualization: Introduction to Data visualization, Challenges to Big data \nvisualization, Types of data visualization, Visualizing Big Data , Tools used in data \nvisualization, Proprietary Data Visualization tools, Open source data visualization tools, Data \nvisualization with Tableau. \n \n \nTEXT BOOK(S)",
+      "problems. \n4. Understand the applications of prescriptive analytics techniques in combina tion with \nreporting and predictive analytics. \n5. Understand the concepts, definitions, and potential use cases for business analytics. \n \nCourse Outcomes(COs) \nAt the end of the course, student would be able to \nCO1. Observe and analyze changing business environments and explain the phases of the \ndecision-making process. \nCO2. Identify the different types of charts and graphs and describe the data visualization, \nvisual analytics and business performance management. \nCO3. Explain various text mining tools and web analytics tools. \nCO4. Analyze model -based decision making and mathematical programming \noptimization. \nCO5. Apply analytics for consumer applications. \n \nUNIT-I",
+      "5:  OUTPUTS SCREENS \n \nLanding Page : Figure 5.1: House Price Predictor AI Welcome  \nInterface \n \nSecurity Portal: Figure 5.2: Price and Important Features"
+    ]
+  },
+  {
+    "question": "What prediction-speed requirement is specified?",
+    "answer": "The system must process user input and generate predictions within milliseconds to seconds [1].",
+    "expected": "The system should process user input and generate predictions within milliseconds to seconds.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "2.2 PERFORMANCE REQUIREMENTS \n \n1. Response Time & Throughput \n• Prediction Speed: The system must process user input and generate predictions within \nmilliseconds to seconds. \n• Concurrency: The system should support multiple users simultaneously without \naffecting performance. \n \n2. Reliability & Availability \n• Uptime: Maintain high availability (99%+) to ensure continuous access for users. \n• Model Stability:  The prediction model should provide consistent outputs for similar \ninputs. \n• Error Handling: In case of invalid input or missing data, the system should prompt \nusers with appropriate messages. \n \n3. Security & Compliance \n• Data Protection:  User input data must be securely handled and not exposed to \nunauthorized access.",
+      "Exhaustive Algorithms, Heuristic Algorithms, Gene Prediction, Categories of gene prediction \nprograms, Gene prediction in prokaryotes and Eukaryotes. \n \n \n \nL T P/D C \n3 - - 3",
+      "biological problems in any arena involving molecular data. \n \nUNIT-I \nIntroduction to Bioinformatics \nWhat is a Data Base, Types of Databases, Biological Databases, Pitfalls of Biological \nDatabases, Information Retrieval from Biological Databases? \n \nUNIT-II \nPair wise Sequence Alignment \nEvolutionary B asics, Sequence homology versus similarity, Sequence similarity versus \nIdentity, Scoring Matrices, Statistical Significance of Sequence alignment, Database similarity \nsearching: Unique requirement of Database searching, Heuristic Database searching. \n \nUNIT-III \nBasic alignment search tool \nComparison of FASTA and BLAST, Multiple Sequence Alignment, Scoring Function, \nExhaustive Algorithms, Heuristic Algorithms, Gene Prediction, Categories of gene prediction"
+    ]
+  },
+  {
+    "question": "What availability target is specified for the system?",
+    "answer": "I could not find enough information in the provided documents to answer this question.",
+    "expected": "High availability of 99% or more.",
+    "sources": [
+      "sources\\DOC-20260729-WA0002.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "Quartertheparent of Month, andso forth. \nAbout UniqueKeyConstraints \nWhenyoucreate adefinitionforahierarchy,WarehouseBuildercreates \nanidentifierkeyforeach level of the hierarchy and a unique key constraint on the lowest \nlevel (Base Level)Design a Hospital Management system data warehouse (TARGET) \nconsists of DimensionsPatient, Medicine, Supplier, Time. Where measures are ‘ NO",
+      "3. Security & Compliance \n• Data Protection:  User input data must be securely handled and not exposed to \nunauthorized access. \n• Input Security:  Prevent invalid or malicious inputs that could affect system \nperformance. \n \n1.1 HARDWARE REQUIREMENTS \n \n1. Client-Side (User Interface) \n Mobile Devices: \n• Android: Minimum 4GB RAM, Android 10+  \n• iOS: A12 Bionic chip or higher  \n Web Interface: \n• Processor: Intel i3/i5 or equivalent  \n• RAM: Minimum 4GB  \n• Display: Standard HD display",
+      "UNIT-I  \nCharacterization of Distributed Systems \nIntroduction, Examples of Distributed systems, \nGoals of Distributed System, Hardware and Software Concepts, Advantages & Disadvantages \nof distributed System, Issues in Designing Distributed Systems, Resource sharing and web, \nchallenges. \nSystem models \nIntroduction, Architectural Models, Fundamental models. \n \nUNIT-II \nTime and Global States \nIntroduction, Clocks Events and Process states, Synchronizing  physical clocks, logica l time \nand logical clocks, global states, distributed debugging.  \nCoordination and Agreement \nIntroduction, Distributed mutual exclusion, Elections,  Multicast communication, consensus \nand related problems.  \n \n \n \n \nL T P/D C \n3 - - 3"
+    ]
+  },
+  {
+    "question": "What should happen when invalid input or missing data is encountered?",
+    "answer": "In case of invalid input or missing data, the system should prompt users with appropriate messages [1].",
+    "expected": "The system should prompt users with appropriate messages.",
+    "sources": [
+      "sources\\dt documentation.pdf",
+      "sources\\dt documentation.pdf",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "2.2 PERFORMANCE REQUIREMENTS \n \n1. Response Time & Throughput \n• Prediction Speed: The system must process user input and generate predictions within \nmilliseconds to seconds. \n• Concurrency: The system should support multiple users simultaneously without \naffecting performance. \n \n2. Reliability & Availability \n• Uptime: Maintain high availability (99%+) to ensure continuous access for users. \n• Model Stability:  The prediction model should provide consistent outputs for similar \ninputs. \n• Error Handling: In case of invalid input or missing data, the system should prompt \nusers with appropriate messages. \n \n3. Security & Compliance \n• Data Protection:  User input data must be securely handled and not exposed to \nunauthorized access.",
+      "3. Security & Compliance \n• Data Protection:  User input data must be securely handled and not exposed to \nunauthorized access. \n• Input Security:  Prevent invalid or malicious inputs that could affect system \nperformance. \n \n1.1 HARDWARE REQUIREMENTS \n \n1. Client-Side (User Interface) \n Mobile Devices: \n• Android: Minimum 4GB RAM, Android 10+  \n• iOS: A12 Bionic chip or higher  \n Web Interface: \n• Processor: Intel i3/i5 or equivalent  \n• RAM: Minimum 4GB  \n• Display: Standard HD display",
+      "B.Tech CSE (DS)  AR22 \n \nDepartment of Computer Science and Engineering 136 \nUNIT-II \nIntroducing to Data Mining \nIntroduction, What is Data Mining, Definition, KDD, Challenges, Data Mining Tasks, Data \nPreprocessing, Data Cleaning, Missing data, Dimensionality Reduction, Feature Subset \nSelection, Discretization and Binaryzation, Data Transformation; Measures of Similarity and \nDissimilarity–Basics. \n \nUNIT-III \nAssociation Rules \nProblem Definition, Frequent Item Set Generation, The APRIORI Principle,Support and \nConfidence Measures, Association Rule Generation; APRIOIRI Algorithm, The  Partition \nAlgorithms, FP - Growth Algorithms, Compact Representation of Frequent Item set -\nMaximal Frequent ItemSet, Closed Frequent Item Sets. \n \nUNIT-IV \nClassification"
+    ]
+  },
+  {
+    "question": "What are the main technical components listed in the project scope?",
+    "answer": "I could not find enough information in the provided documents to answer this question.",
+    "expected": "The machine learning prediction engine, the user and system interface, and the data processing and analytics module.",
+    "sources": [
+      "C:\\Users\\Sai Adithya\\Downloads\\BT QUESTION BANK FOR SEMESTER EXAMS.docx",
+      "sources\\DOC-20260729-WA0002.pdf",
+      "C:\\Users\\Sai Adithya\\Downloads\\BT QUESTION BANK FOR SEMESTER EXAMS.docx"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "Explain the various types of cement and their specific uses in construction projects.\n\nUNIT II: Building Design and Planning\n\nShort Answer Questions:\n\nWhat is meant by building design?\n\nWhat are the main components of a building?\n\nWhat are building bye-laws?\n\nWhy is ventilation important in building design?\n\nWhat is the importance of lighting in a building?\n\nLong Answer Questions:\n\nDiscuss the principles of planning a building, including space utilization, economy, and aesthetics.\n\nExplain the significance of building bye-laws and how they impact construction projects.\n\nDiscuss the importance of proper ventilation and lighting in building design.\n\nDescribe the components of a building and how they contribute to its overall design and functionality.",
+      "Elements of IoT \nHardware Components - Computing (Arduino, Raspberry Pi), Communication, Sensing, \nActuation, I/O interfaces.  \nSoftware Components \nProgramming API’s (using Python/ Node.js/ Arduino) for Communication Protocols -MQTT, \nZigBee, Bluetooth, CoAP, UDP, TCP. \n \n \n \nL T P/D C \n3 - - 3",
+      "UNITI: Stones, Bricks, Cement, and Concrete \n\nShort Answer Questions:\n\nWhat are the main uses of stones as building materials?\n\nWhat are the key characteristics of good building stones?\n\nName two types of bricks used in construction.\n\nWhat is cement, and why is it important in construction?\n\nWhat is concrete, and what are its components?\n\nLong Answer Questions:\n\nExplain the different types of stones used in construction and their significance.\n\nDiscuss the properties and uses of cement in construction.\n\nWhat is the role of concrete in building construction? Explain its composition and importance.\n\nCompare and contrast the characteristics of good and poor-quality building stones.\n\nExplain the various types of cement and their specific uses in construction projects."
+    ]
+  },
+  {
+    "question": "What are Wearable Device Operating Systems designed for?",
+    "answer": "Wearable Device Operating Systems are designed for the following purposes:\n*   To provide efficient resource management in low-power devices [2].\n*   To support real-time processing of sensor data [2].\n*   To provide efficient performance in compact and power-limited environments [1].",
+    "expected": "They are specialized operating systems designed for wearable technology such as smartwatches, fitness bands, and smart glasses.",
+    "sources": [
+      "C:\\Users\\HP\\Downloads\\Rag Project\\sources\\OS.pptx",
+      "C:\\Users\\Sai Adithya\\Downloads\\OS.pptx",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "GPS tracking and directions \n\nIndustrial & Military Use \n\nSafety monitoring \n\nHands-free operations\n\n\n\nWear OS (by Google) \n\nUsed in smartwatches \n\nSupports apps, notifications, and voice assistants \n\nwatchOS (Apple) \n\nAdvanced health tracking \n\nSeamless integration with iPhone \n\nFitbit OS \n\nFocused on fitness and health monitoring \n\nGarmin OS \n\nUsed for sports and outdoor tracking \n\nExample\u000b\n\n\n\n\u000b\u000b\u000bConclusion\u000b\n\nWearable Device Operating Systems play a crucial role in modern smart devices. \n\nThey provide efficient performance in compact and power-limited environments. \n\nThese OS are transforming industries like healthcare, fitness, and communication. \n\nWith advancements in technology, wearable OS will become more intelligent, secure, and feature-rich.",
+      "GEETHANJALI COLLEGE OF ENGINEERING & TECHNOLOGY (GCET)\u000bAppoved by AICTE, New Delhi, Affiliated to JNTUH University, Hyderabad and Accredited by NAAC & NBA. Cheeryal(V), Keesara(M), Medchal(Dist.), Telangana – 501 301.\u000b\u000bDepartment of CSE (Data Science)\n\nPPT Presentation\n\nOn \n\n“Wearable Device Operating Systems”\n\nPresented By\n\n24R11A67H3  –  Mohammad Rehan Ahmed (DS-C)\n\nCourse: Operating Systems\n\nCourse Faculty : Mrs.G.RajaSri\n\n\n\n\u000b\u000b\u000b\u000bContents\n\nIntroduction to Wearable Device Operating Systems \n\nObjectives of Wearable OS \n\nReal Time Applications \n\nExamples of Wearable OS \n\nConclusion \n\nReferences \n\n\n\n\u000b\u000b\u000bIntroduction\u000b\n\n\n\nObjectives\n\nTo provide efficient resource management in low-power devices \n\nTo support real-time processing of sensor data",
+      "6. An Introduction to Operating Systems, P.C.P. Bhatt, PHI. \n7. Operating Systems, S, Haldar and A. A. Arvind, Pearson Education. \n8. Operating Systems, R. Elmasri, A. G. Carrick and D. Levine, McGraw Hill. \n9. Operating Systems in depth, T. W. Doeppner, Wiley."
+    ]
+  },
+  {
+    "question": "What three characteristics are wearable operating systems optimized for?",
+    "answer": "Wearable operating systems are optimized for the following three characteristics:\n*   Efficient performance [1]\n*   Compact environments [1]\n*   Power-limited environments [1]",
+    "expected": "Low power consumption, small screen interfaces, and real-time data processing.",
+    "sources": [
+      "C:\\Users\\Sai Adithya\\Downloads\\OS.pptx",
+      "C:\\Users\\Sai Adithya\\Downloads\\OS.pptx",
+      "sources\\dt documentation.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "GPS tracking and directions \n\nIndustrial & Military Use \n\nSafety monitoring \n\nHands-free operations\n\n\n\nWear OS (by Google) \n\nUsed in smartwatches \n\nSupports apps, notifications, and voice assistants \n\nwatchOS (Apple) \n\nAdvanced health tracking \n\nSeamless integration with iPhone \n\nFitbit OS \n\nFocused on fitness and health monitoring \n\nGarmin OS \n\nUsed for sports and outdoor tracking \n\nExample\u000b\n\n\n\n\u000b\u000b\u000bConclusion\u000b\n\nWearable Device Operating Systems play a crucial role in modern smart devices. \n\nThey provide efficient performance in compact and power-limited environments. \n\nThese OS are transforming industries like healthcare, fitness, and communication. \n\nWith advancements in technology, wearable OS will become more intelligent, secure, and feature-rich.",
+      "GEETHANJALI COLLEGE OF ENGINEERING & TECHNOLOGY (GCET)\u000bAppoved by AICTE, New Delhi, Affiliated to JNTUH University, Hyderabad and Accredited by NAAC & NBA. Cheeryal(V), Keesara(M), Medchal(Dist.), Telangana – 501 301.\u000b\u000bDepartment of CSE (Data Science)\n\nPPT Presentation\n\nOn \n\n“Wearable Device Operating Systems”\n\nPresented By\n\n24R11A67H3  –  Mohammad Rehan Ahmed (DS-C)\n\nCourse: Operating Systems\n\nCourse Faculty : Mrs.G.RajaSri\n\n\n\n\u000b\u000b\u000b\u000bContents\n\nIntroduction to Wearable Device Operating Systems \n\nObjectives of Wearable OS \n\nReal Time Applications \n\nExamples of Wearable OS \n\nConclusion \n\nReferences \n\n\n\n\u000b\u000b\u000bIntroduction\u000b\n\n\n\nObjectives\n\nTo provide efficient resource management in low-power devices \n\nTo support real-time processing of sensor data",
+      "3. Security & Compliance \n• Data Protection:  User input data must be securely handled and not exposed to \nunauthorized access. \n• Input Security:  Prevent invalid or malicious inputs that could affect system \nperformance. \n \n1.1 HARDWARE REQUIREMENTS \n \n1. Client-Side (User Interface) \n Mobile Devices: \n• Android: Minimum 4GB RAM, Android 10+  \n• iOS: A12 Bionic chip or higher  \n Web Interface: \n• Processor: Intel i3/i5 or equivalent  \n• RAM: Minimum 4GB  \n• Display: Standard HD display"
+    ]
+  },
+  {
+    "question": "How do wearable operating systems enable interaction between users and devices?",
+    "answer": "Wearable operating systems enable interaction between users and devices by supporting apps, notifications, and voice assistants [1].",
+    "expected": "Through sensors and connectivity features.",
+    "sources": [
+      "C:\\Users\\Sai Adithya\\Downloads\\OS.pptx",
+      "C:\\Users\\Sai Adithya\\Downloads\\OS.pptx",
+      "sources\\DOC-20260729-WA0002.pdf"
+    ],
+    "model": "gemini-2.5-flash",
+    "contexts": [
+      "GPS tracking and directions \n\nIndustrial & Military Use \n\nSafety monitoring \n\nHands-free operations\n\n\n\nWear OS (by Google) \n\nUsed in smartwatches \n\nSupports apps, notifications, and voice assistants \n\nwatchOS (Apple) \n\nAdvanced health tracking \n\nSeamless integration with iPhone \n\nFitbit OS \n\nFocused on fitness and health monitoring \n\nGarmin OS \n\nUsed for sports and outdoor tracking \n\nExample\u000b\n\n\n\n\u000b\u000b\u000bConclusion\u000b\n\nWearable Device Operating Systems play a crucial role in modern smart devices. \n\nThey provide efficient performance in compact and power-limited environments. \n\nThese OS are transforming industries like healthcare, fitness, and communication. \n\nWith advancements in technology, wearable OS will become more intelligent, secure, and feature-rich.",
+      "GEETHANJALI COLLEGE OF ENGINEERING & TECHNOLOGY (GCET)\u000bAppoved by AICTE, New Delhi, Affiliated to JNTUH University, Hyderabad and Accredited by NAAC & NBA. Cheeryal(V), Keesara(M), Medchal(Dist.), Telangana – 501 301.\u000b\u000bDepartment of CSE (Data Science)\n\nPPT Presentation\n\nOn \n\n“Wearable Device Operating Systems”\n\nPresented By\n\n24R11A67H3  –  Mohammad Rehan Ahmed (DS-C)\n\nCourse: Operating Systems\n\nCourse Faculty : Mrs.G.RajaSri\n\n\n\n\u000b\u000b\u000b\u000bContents\n\nIntroduction to Wearable Device Operating Systems \n\nObjectives of Wearable OS \n\nReal Time Applications \n\nExamples of Wearable OS \n\nConclusion \n\nReferences \n\n\n\n\u000b\u000b\u000bIntroduction\u000b\n\n\n\nObjectives\n\nTo provide efficient resource management in low-power devices \n\nTo support real-time processing of sensor data",
+      "UNIT-I \nOperating System Introduction \nOperating Systems Objectives and functions, Computer System Architecture, OS Structure, \nOS Operations, Evolution of Operating Systems - Simple Batch, Multi programmed, time \nshared, Personal Computer, Parallel, Distributed Systems, Real -Time Systems, Special - \nPurpose Systems, Operating System services, user OS Inte rface, System Calls, Types of \nSystem Calls, System Programs, Operating System Design and Implementation, OS Structure, \nVirtual machines. \n \nUNIT-II  \nProcess and CPU Scheduling \nProcess concepts - The Process, Process State, Process Control Block, Threads, Pro cess \nScheduling - Scheduling Queues, Schedulers, Context Switch, Pre -emptive Scheduling,"
+    ]
   }
 ]

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Try Mondroid</title>
+  <meta name="description" content="Experience Mondroid RAG system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-try">
+
+  <nav class="custom-navbar" style="background: var(--sw-bg); border-bottom: 1px solid var(--border);">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+      </svg>
+      mondroid
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="docs.html">Docs</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-right">
+      <a href="try.html" class="btn-primary">Try Mondroid ↗</a>
+    </div>
+  </nav>
+
+  <main class="try-layout">
+    <div class="try-container">
+      
+      <!-- Left Sidebar: Documents -->
+      <aside class="try-sidebar">
+        <div class="try-sidebar__header">
+          <h3>Knowledge Base</h3>
+          <p>Upload documents to index</p>
+        </div>
+        
+        <div class="upload-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+          <p class="upload-title">Drop files here</p>
+          <p class="upload-subtitle">PDF, TXT, or MD</p>
+        </div>
+        
+        <div class="doc-list">
+          <div class="doc-list__title">INDEXED (3)</div>
+          
+          <div class="doc-item">
+            <span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <span class="doc-name">Q3_Financials.pdf</span>
+              <span class="doc-meta">24 pages • Indexed</span>
+            </div>
+          </div>
+          
+          <div class="doc-item">
+            <span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <span class="doc-name">API_Documentation.md</span>
+              <span class="doc-meta">12 kb • Indexed</span>
+            </div>
+          </div>
+          
+          <div class="doc-item">
+            <span class="doc-icon">📄</span>
+            <div class="doc-info">
+              <span class="doc-name">Employee_Handbook.pdf</span>
+              <span class="doc-meta">42 pages • Indexed</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Main Area: Chat -->
+      <section class="try-chat">
+        <header class="chat-header">
+          <h2>Query Engine</h2>
+          <div class="status-badge"><span class="dot"></span> System Ready</div>
+        </header>
+        
+        <div class="chat-messages">
+          <div class="message system">
+            <div class="avatar">M</div>
+            <div class="msg-content">
+              Hello! I'm Mondroid. I've successfully indexed 3 documents. You can ask me anything about the Q3 financials, API, or the employee handbook. I will provide accurate answers with citations.
+            </div>
+          </div>
+          
+          <!-- Example user message -->
+          <div class="message user">
+            <div class="msg-content">
+              What was our net revenue in Q3?
+            </div>
+          </div>
+          
+          <!-- Example system response -->
+          <div class="message system">
+            <div class="avatar">M</div>
+            <div class="msg-content">
+              Based on the <strong>Q3_Financials.pdf</strong>, the net revenue for Q3 was $4.2 million, representing an 18% increase year-over-year.
+              <br><br>
+              <span class="citation">Citation: Q3_Financials.pdf (Page 4, Paragraph 2)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="chat-input-wrapper">
+          <div class="chat-input-box">
+            <input type="text" class="chat-input" placeholder="Ask a question..." />
+            <button class="chat-send">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+          <div class="chat-footer-text">Mondroid uses Retrieval-Augmented Generation (RAG) to prevent hallucinations.</div>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+        </svg>
+        mondroid
+      </div>
+      <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="docs.html">Docs</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Mondroid. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

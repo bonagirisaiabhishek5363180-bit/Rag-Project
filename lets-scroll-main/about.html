@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mondroid — About</title>
+  <meta name="description" content="The story behind Mondroid." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-about">
+  
+  <nav class="custom-navbar">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor"/>
+      </svg>
+      mondroid
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="docs.html">Docs</a>
+      <a href="about.html" class="active">About</a>
+    </div>
+    <div class="nav-right">
+      <a href="try.html" class="btn-primary">Try Mondroid ↗</a>
+    </div>
+  </nav>
+
+  <main class="about-layout">
+    
+    <article class="about-content">
+      <h1 class="reveal-on-scroll">The Project</h1>
+      
+      <h2 class="reveal-on-scroll">What is Mondroid?</h2>
+      <p class="reveal-on-scroll">Mondroid is an advanced Retrieval-Augmented Generation (RAG) system. At its core, it is a bridge between static text repositories and intelligent synthesis, designed to parse complex documents and answer questions with high precision and citations.</p>
+      
+      <h2 class="reveal-on-scroll">The Problem</h2>
+      <p class="reveal-on-scroll">Information overload is a persistent challenge. While generative AI models are incredibly articulate, they suffer from hallucinations and lack context regarding private, specialized, or up-to-date data. Finding an exact answer buried in thousands of pages of documentation using standard keyword searches is inefficient and prone to error.</p>
+      
+      <h2 class="reveal-on-scroll">The Idea</h2>
+      <p class="reveal-on-scroll">The project was born out of the necessity to ground generative AI in reality. By combining semantic understanding with exact-match retrieval, the goal was to build a system that not only reads your documents but understands the nuance and context behind every paragraph, delivering answers rather than search results.</p>
+      
+      <h2 class="reveal-on-scroll">The Technology</h2>
+      <p class="reveal-on-scroll">Mondroid leverages a hybrid retrieval architecture. It uses ChromaDB for dense vector embeddings and BM25 for sparse keyword matching. These streams are merged and rescored using a CrossEncoder model, guaranteeing that the context provided to the final generative layer (powered by models like Gemini) is of the highest possible quality.</p>
+      
+      <div class="reveal-on-scroll" style="margin-top: 80px; text-align: center;">
+        <a href="try.html" class="btn-primary" style="display:inline-block;">Explore the Product ↗</a>
+      </div>
+    </article>
+
+  </main>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+        </svg>
+        mondroid
+      </div>
+      <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="docs.html">Docs</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Mondroid. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

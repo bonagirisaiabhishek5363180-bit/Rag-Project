@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mondroid — How It Works</title>
+  <meta name="description" content="Inside the Mondroid RAG architecture." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-how">
+
+  <nav class="custom-navbar">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+      </svg>
+      mondroid
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="how-it-works.html" class="active">How it works</a>
+      <a href="docs.html">Docs</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-right">
+      <a href="try.html" class="btn-primary">Try Mondroid ↗</a>
+    </div>
+  </nav>
+
+  <main class="product-page">
+
+    <header class="product-hero reveal-on-scroll">
+      <div class="product-hero__eyebrow">HOW IT WORKS</div>
+      <h1 class="product-hero__title">Built for deeper<br>understanding.</h1>
+      <p class="product-hero__body">Explore the internal RAG architecture that powers Mondroid's retrieval and synthesis
+        engine.</p>
+    </header>
+
+    <section class="product-section">
+      <h2 class="product-section__heading reveal-on-scroll">THE ARCHITECTURE</h2>
+
+      <div class="pipeline-container reveal-on-scroll" style="margin-top: 64px;">
+        <div class="pipeline-step is-active" data-step>
+          <div class="step-num">01 INGESTION & CHUNKING</div>
+          <h3>Process unstructured text.</h3>
+          <p>Documents are ingested and semantically split into manageable chunks optimized for embeddings.</p>
+        </div>
+        <div class="pipeline-step" data-step>
+          <div class="step-num">02 EMBEDDINGS</div>
+          <h3>Map meaning to vectors.</h3>
+          <p>Chunks are passed through an embedding model to create dense vector representations.</p>
+        </div>
+        <div class="pipeline-step" data-step>
+          <div class="step-num">03 HYBRID RETRIEVAL</div>
+          <h3>Chroma + BM25</h3>
+          <p>Queries execute a semantic vector search in ChromaDB alongside a lexical BM25 search for exact keywords.
+            The results are merged.</p>
+        </div>
+        <div class="pipeline-step" data-step>
+          <div class="step-num">04 RERANKING</div>
+          <h3>CrossEncoder Precision</h3>
+          <p>A specialized CrossEncoder scores the merged candidates against the query, pushing the strongest evidence
+            to the top.</p>
+        </div>
+        <div class="pipeline-step" data-step>
+          <div class="step-num">05 GENERATION</div>
+          <h3>Synthesize the answer.</h3>
+          <p>The top context is injected into the LLM prompt. The generator synthesizes a grounded answer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Flow Diagram -->
+    <section class="product-section" style="border-bottom: none; padding-bottom: 200px;">
+      <h2 class="product-section__heading reveal-on-scroll">DATA PIPELINE</h2>
+
+      <div class="diagram reveal-on-scroll" style="align-items:flex-start;">
+        <div class="diagram-node" style="border-color: var(--sw-accent);">DOCUMENTS</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-node">INGESTION & CHUNKING</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-node">EMBEDDINGS</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-row">
+          <div class="diagram-node">CHROMA<br><span style="color:var(--sw-ink-soft);font-size:0.7rem;">SEMANTIC</span>
+          </div>
+          <div style="font-size:1.5rem;color:var(--sw-ink-soft);">+</div>
+          <div class="diagram-node">BM25<br><span style="color:var(--sw-ink-soft);font-size:0.7rem;">KEYWORD</span>
+          </div>
+        </div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-node">MERGE</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-node" style="border-color: var(--sw-accent);">CROSSENCODER RERANKING</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-node">TOP CONTEXT</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-node">GENERATION</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-node" style="background:var(--sw-ink);color:var(--sw-bg);">ANSWER</div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    const steps = document.querySelectorAll('.pipeline-step');
+    const stepObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          steps.forEach(s => s.classList.remove('is-active'));
+          entry.target.classList.add('is-active');
+        }
+      });
+    }, {
+      threshold: 0.8,
+      rootMargin: "-20% 0px -20% 0px"
+    });
+    steps.forEach(step => stepObserver.observe(step));
+  </script>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+        </svg>
+        mondroid
+      </div>
+      <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="docs.html">Docs</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Mondroid. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mondroid — Product</title>
+  <meta name="description"
+    content="Knowledge, with context. Mondroid turns your documents into a searchable knowledge system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-product">
+
+  <nav class="custom-navbar">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+      </svg>
+      mondroid
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html" class="active">Product</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="docs.html">Docs</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-right">
+      <a href="try.html" class="btn-primary">Try Mondroid ↗</a>
+    </div>
+  </nav>
+
+  <main class="product-page">
+
+    <!-- 1. HERO -->
+    <header class="product-hero reveal-on-scroll">
+      <div class="product-hero__eyebrow">PRODUCT</div>
+      <h1 class="product-hero__title">Knowledge,<br>with context.</h1>
+      <p class="product-hero__body">Mondroid turns your documents into a searchable knowledge system that can retrieve,
+        rank, and synthesize relevant information.</p>
+      <div>
+        <a href="try.html" class="btn-primary" style="display:inline-block;">Try Mondroid ↗</a>
+      </div>
+    </header>
+
+    <!-- 2. THE PROBLEM -->
+    <section class="product-section">
+      <h2 class="problem-statement reveal-on-scroll">Finding information isn't the same as understanding it.</h2>
+      <p class="problem-desc reveal-on-scroll">Knowledge is distributed across documents, reports, research papers, and
+        scattered notes. Mondroid allows you to ask questions across your entire document repository, surfacing the
+        exact context needed to answer complex questions instantly.</p>
+    </section>
+
+    <!-- 3. CAPABILITIES -->
+    <section class="product-section">
+      <h2 class="product-section__heading reveal-on-scroll">WHAT IT DOES</h2>
+
+      <div class="pipeline-container reveal-on-scroll">
+        <div class="pipeline-step is-active" data-step>
+          <div class="step-num">01</div>
+          <h3>Turns documents into a searchable system.</h3>
+          <p>Upload your unstructured data securely. We index it so it's ready to be queried at a moment's notice.</p>
+        </div>
+        <div class="pipeline-step is-active" data-step>
+          <div class="step-num">02</div>
+          <h3>Finds relevant information instantly.</h3>
+          <p>Ask natural language questions across all your documents to pinpoint the exact paragraphs that matter.</p>
+        </div>
+        <div class="pipeline-step is-active" data-step>
+          <div class="step-num">03</div>
+          <h3>Delivers context-aware answers.</h3>
+          <p>Get clear, hallucination-free answers perfectly tailored to your query, fully cited with references.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. VISUAL FLOW -->
+    <section class="product-section">
+      <h2 class="product-section__heading reveal-on-scroll">FROM CHAOS TO CLARITY</h2>
+
+      <div class="diagram reveal-on-scroll" style="align-items:flex-start; margin-top: 48px;">
+        <div class="diagram-row" style="gap:24px;">
+          <div class="diagram-node">DOCUMENTS</div>
+          <div class="diagram-arrow">→</div>
+          <div class="diagram-node" style="border-color: var(--sw-accent);">KNOWLEDGE</div>
+          <div class="diagram-arrow">→</div>
+          <div class="diagram-node" style="background:var(--sw-ink);color:var(--sw-bg);">ANSWER</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FINAL CTA -->
+    <section class="product-section" style="text-align: center; border-bottom: none; padding-bottom: 200px;">
+      <h2 class="product-hero__title reveal-on-scroll" style="margin: 0 auto 16px auto;">READY TO ASK?</h2>
+      <p class="problem-desc reveal-on-scroll" style="margin: 0 auto 48px auto;">Your knowledge is already there.</p>
+      <div class="reveal-on-scroll">
+        <a href="#" class="btn-primary" style="display:inline-block;">Try Mondroid ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 16L12 4L20 16H16L12 10L8 16H4Z" fill="currentColor" />
+        </svg>
+        mondroid
+      </div>
+      <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="docs.html">Docs</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Mondroid. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>
