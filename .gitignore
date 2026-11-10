@@ -6,7 +6,7 @@
 .venv-ragas/
 venv/
 env/
-
+.arena/
 
 __pycache__/
 *.py[cod]
@@ -34,6 +34,16 @@ rag_golden_eval_package.zip
 *.swo
 *~
 
+# Agent and task instruction files
+[Aa][Gg][Ee][Nn][Tt][Ss].md
+[Aa][Gg][Ee][Nn][Tt].md
+*.agent.md
+*.instructions.md
+*.prompt.md
+[Tt][Aa][Ss][Kk].md
+[Tt][Aa][Ss][Kk][Ss].md
+*.task.md
+*.tasks.md
 
 .DS_Store
 Thumbs.db
